@@ -1,17 +1,11 @@
 use anchor_lang::prelude::*;
 
-pub mod errors;
-pub mod utils;
-pub mod instructions;
-pub mod state;
-pub mod consts;
-
-pub use instructions::initialize::InitialCurveConfiguration;
-pub use instructions::create_pool::CreateLiquidityPool;
-pub use instructions::add_liquidity::AddLiquidity;
-pub use instructions::remove_liquidity::RemoveLiquidity;
-pub use instructions::buy::Buy;
-pub use instructions::sell::Sell;
+pub use instructions::InitialCurveConfiguration;
+pub use instructions::CreateLiquidityPool;
+pub use instructions::AddLiquidity;
+pub use instructions::RemoveLiquidity;
+pub use instructions::Buy;
+pub use instructions::Sell;
 
 declare_id!("9yFGjEq3TEdgtQSzQaZQBg1xuCbj5hDshPxo1xy3E4d8");
 
